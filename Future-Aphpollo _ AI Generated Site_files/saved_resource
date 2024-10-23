@@ -1,0 +1,112 @@
+//<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+      'anonymous_id' : '65f9f1bd-ab21-4053-baaf-97ff6bd04a2a'
+    });
+<!-- Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TP6FDBTB');
+<!-- End Google Tag Manager -->
+
+
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://analytics.brizy.io/v1/analytics-js/snippet/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._writeKey=key;analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.15.3";
+    analytics.load(
+        "abc6c038164e28723b10",
+        {
+            "integrations": {
+                /*"Customer.io In-App Plugin": {
+                    siteId: "434a8e423bd4dbc7ce5b"
+                },*/
+                "Customer.io Data Pipelines": {
+                    apiHost: "analytics.brizy.io/v1/",
+                    cdnURL: 'https://analytics.brizy.io'
+                }
+            }
+        }
+    );
+    analytics.setAnonymousId('65f9f1bd-ab21-4053-baaf-97ff6bd04a2a');
+analytics.page();}}();
+
+(function() {
+    var t = document.createElement('script'),
+        s = document.getElementsByTagName('script')[0];
+    t.async = true;
+    t.id    = 'cio-forms-handler';
+    t.setAttribute('data-site-id', '434a8e423bd4dbc7ce5b');
+    t.setAttribute('data-base-url', 'https://formsio.brizy.io');
+
+    t.src = 'https://formsio.brizy.io/assets/forms.js';
+
+    s.parentNode.insertBefore(t, s);
+})();
+
+
+
+//var FathomURL = 'https://cdn.usefathom.com/script.js';
+//new Promise((r, j) => { let s = document.createElement('script'); s.src = FathomURL; s.defer = true; s.setAttribute('data-site', 'DVGYLZSD'); s.onload = r; s.onerror = j; document.head.appendChild(s); }).then(() => console.log('Loaded')).catch(e => console.error('Error:', e));
+
+/*if (window.location.href.indexOf("solutions-for-agencies") != -1 || window.location.href.indexOf("solutions-for-hosts-and-resellers") != -1 || window.location.href.indexOf("saas-website-builder") != -1
+    || window.location.href.indexOf("white-label-website-builder") != -1 || window.location.href.indexOf("white-label-thank-you-pager") != -1) {*/
+    /*(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "il748elcwh");*/
+/*}*/
+
+
+
+/*var optimonkURL = 'https://onsite.optimonk.com/script.js?account=223551';
+new Promise((r, j) => { let s = document.createElement('script'); s.src = optimonkURL; s.async = true; s.onload = r; s.onerror = j; document.head.appendChild(s); }).then(() => console.log('Loaded')).catch(e => console.error('Error:', e));
+*/
+
+
+/*
+var uxTrackURL = 'https://storage.googleapis.com/brizy_uxinteractions_code/brizy_ux_collect.js';
+new Promise((r, j) => { let s = document.createElement('script'); s.src = uxTrackURL; s.async = true; s.onload = r; s.onerror = j; document.head.appendChild(s); }).then(() => console.log('Loaded')).catch(e => console.error('Error:', e));
+*/
+
+
+function loadScript(e,t){var a,r,n;r=!1,(a=document.createElement("script")).type="text/javascript",a.src=e,a.onload=a.onreadystatechange=function(){r||this.readyState&&"complete"!=this.readyState||(r=!0,t())},(n=document.getElementsByTagName("script")[0]).parentNode.insertBefore(a,n)}
+function camelize(str){return str.replace(/(?:^\w|[A-Z]|\b\w)/g,function(word, index){return '-'+word.toUpperCase();}).replace(/\s\s+|-+/g,' ').trim();}
+function brsetCookie(e,t,i,d){let o=new Date;o.setTime(o.getTime()+864e5*i);let $="expires="+o.toUTCString();document.cookie=e+"="+t+";"+$+";path=/;domain="+d+";SameSite=None;Secure"}
+function brgetCookie(t){let e=t+"=",n=decodeURIComponent(document.cookie).split(";");for(let r=0;r<n.length;r++){let i=n[r];for(;" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}
+function brzTrack()
+{
+    //todo: add proprietes and values brz-sg-prop-<Prop Name>-<Prop Value>
+    document.querySelectorAll("[class*='brz-sg-']").forEach(function(btn) {
+        var segmentData = {};
+        btn.className.split(' ').filter(function(value) {
+            var splitClass = value.split('-');
+            splitClass.splice(0, 3).join('-');
+            if (splitClass[0] === 'event') {
+                splitClass.splice(0, 1);
+                segmentData['event'] = camelize(splitClass.join('-'));
+            }
+            /*else if (splitClass[0] === 'category') {
+                splitClass.splice(0, 1);
+                segmentData['category'] = camelize(splitClass.join('-'));
+            } else if (splitClass[0] === 'label') {
+                splitClass.splice(0, 1);
+                segmentData['label'] = camelize(splitClass.join('-'));
+            }*/
+        });
+        analytics.trackClick(btn, segmentData.event);
+        //window.dataLayer.push({'event': segmentData.event});
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    brzTrack();
+});
+
+function brzload(){
+    //console.log('uuuuu');
+}
+
+!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="1efb91f9-00d9-4d91-88e5-8c04983750d9",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);
+
+//</script>

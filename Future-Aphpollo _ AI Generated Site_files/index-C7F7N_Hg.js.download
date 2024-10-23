@@ -1,0 +1,1 @@
+import{s as n}from"./cookie-CIOCxitB.js";const t=e=>{window.i18nextify.i18next.changeLanguage(e,()=>{window.i18nextify.forceRerender(),n("APP_LANGUAGE",e)})},o=e=>window.i18nextify.i18next.t(e)??e;export{t as c,o as t};
